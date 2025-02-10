@@ -21,7 +21,7 @@ namespace CounterFunction
             var response = req.CreateResponse(HttpStatusCode.OK);
             await response.WriteAsJsonAsync(item);
 
-            // Return item / save to CosmosDB
+            // Save updated item to DB
             return item;
         }
     }
