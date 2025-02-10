@@ -17,7 +17,7 @@ namespace CounterFunction
             // Increment visit count
             item.Count++;
 
-            // Write JSON response
+            // Write new count to HTTP response
             var response = req.CreateResponse(HttpStatusCode.OK);
             await response.WriteAsJsonAsync(item);
 
